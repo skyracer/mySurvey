@@ -23,7 +23,10 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-    	
+     <script>
+     $('.selectpicker').selectpicker();    
+     </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -58,8 +61,8 @@
       				<div class="list-group">
         				<a href="#user" data-transition="slide" class="list-group-item">
           					<span class="badge">21</span>
-          					<h4 class="list-group-item-heading">Food Aid Programme</h4>
-          					<p class="list-group-item-text">About 4 weeks ago</p>
+          					<h4 class="list-group-item-heading">Survey V1</h4>
+          					<p class="list-group-item-text">About a week ago</p>
         				</a>
         				<a href="#user"  data-transition="slide" class="list-group-item">
           					<span class="badge">15</span>
@@ -147,47 +150,51 @@
           </div>
         </form>
       </div>
-      <a class="footer btn" data-transition="slide" href="#pageone">Start Survey</a>
+      <a class="footer btn" data-transition="slide" href="#page01">Start Survey</a>
     </div>
   </div>
 </div>
 
 
-<div data-role="page" id="pageone">
+<div data-role="page" id="page01">
   <div data-role="main" class="container">
   <div class="card">
+  <div class="main">  
   <div class="content">
-         <div class="main">  
-         <img src="images/progress_icon.png" class="img-responsive" alt="Responsive image">                          
-         <h3>Which sources of information did you use during your most recent search for a home?</h3>
+         <!--p class="steps">Question <strong>1</strong> of <strong>21</strong></p-->
+         <p class="steps">Question <strong>1 / 21</strong></p>
+         <h3>Which age group do you belong to?</h3>
                          
          <div class="list-group">
-         <a href="#pagetwo" data-transition="slide" class="list-group-item">Internet</a>
-         <a href="#pagetwo" data-transition="slide" class="list-group-item">Newspaper</a>
-         <a href="#pagetwo" data-transition="slide" class="list-group-item">Magazines</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">18 - 29</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">30 - 39</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">40 - 49</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">50 - 59</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">60 - 69</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">70 - 79</a>
+         <a href="#page02" data-transition="slide" class="list-group-item">> 80</a>
          </div>
-         </div>
+   </div>
    </div>
   </div>
   </div>
 </div> 
 
-<div data-role="page" id="pagetwo">
+<div data-role="page" id="page02">
 
   <div data-role="main" class="container">
         <div class="card">
          <div class="main">
          <div class="content">
-         <img src="images/progress_icon_02.png" class="img-responsive" alt="Responsive image">                          
-         <h3>How satisfied are you with this product?</h3>
+         <p class="steps">Question <strong>2 / 21</strong></p>
+         <h3>What is your marital status?</h3>
+         <div class="list-group">
+         <a href="#page03" data-transition="slide" class="list-group-item">Single</a>
+         <a href="#page03" data-transition="slide" class="list-group-item">Married</a>
+         <a href="#page03" data-transition="slide" class="list-group-item">Divorce</a>
+         <a href="#page03" data-transition="slide" class="list-group-item">Widow / Widower</a>
+         </div>
                          
- 			<div class="btn-group btn-group-justified">
- 			 <a href="#pagethree" data-transition="slide" class="btn btn-default">1</a>
- 			 <a href="#pagethree" data-transition="slide" class="btn btn-default">2</a>
- 			 <a href="#pagethree" data-transition="slide" class="btn btn-default">3</a>
- 			 <a href="#pagethree" data-transition="slide" class="btn btn-default">4</a>
- 			 <a href="#pagethree" data-transition="slide" class="btn btn-default">5</a>
-			</div>
             </div> 
           </div>
         </div>
@@ -199,82 +206,565 @@
   </div>
 </div> 
 
-<div data-role="page" id="pagethree">
+<div data-role="page" id="page03">
 
   <div data-role="main" class="container">
+        <div class="card">
+         <div class="main">
+         <div class="content">
+         <p class="steps">Question <strong>3 / 21</strong></p>
+         <h3>Which ethnic group do you belong to?</h3>
+         <div class="list-group">
+         <a href="#page04" data-transition="slide" class="list-group-item">Malay</a>
+         <a href="#page04" data-transition="slide" class="list-group-item">Chinese</a>
+         <a href="#page04" data-transition="slide" class="list-group-item">Indian</a>
+         </div>
+         <h4>Others (Please specify)</h4><textarea class="form-control" rows="3"></textarea>
+         <a class="footer btn" data-transition="slide" href="#page04">Next</a>
+         </div> 
+         </div>
+        </div>
  
-               <div class="card">
-         
-               <div class="content">
-                      <div class="main">
-                          <img src="images/progress_icon_03.png" class="img-responsive" alt="Responsive image">                          
-                          <h3>Please rate us!</h3>
-                          <div class="slider-wrapper" style="margin-left:20px; margin-right:25px; margin-top: 20px;">
-                            <input type="text" class="js-check-change" />
-                            <div style="margin-top: 15px;">You selected: <span id="js-display-change" class="display-box"></span></div>
-                          </div>
-                      </div>
-                  </div>
-                 <a class="footer btn" data-transition="slide" href="#pagefour">Okay</a>
-
-                  </div>
-                
-
-
   <!--div data-role="footer">
     <h1>Footer Text</h1>
   </div-->
   </div>
 </div> 
 
-<div data-role="page" id="pagefour">
+<div data-role="page" id="page04">
 
   <div data-role="main" class="container">
- 
-               <div class="card">
-                      <div class="main">
-                      <div class="content">
-                          <img src="images/progress_icon_04.png" class="img-responsive" alt="Responsive image">                          
-						  <h3>How do you prefer hearing about our organization's fundraising activities?</h3>
-                          
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#pagefive" data-transition="slide" class="list-group-item">Email</a>
- 			                <a href="#pagefive" data-transition="slide" class="list-group-item">Phone</a>
- 			                <a href="#pagefive" data-transition="slide" class="list-group-item">Social Media</a>
- 			                <a href="#pagefive" data-transition="slide" class="list-group-item">Website</a>
- 			                <a href="#pagefive" data-transition="slide" class="list-group-item">Magazines</a>
-			             </div>
-                         </div>
-                     </div>
-               </div>
-
-
+    <div class="card">
+        <div class="main">
+          <div class="content">
+          <p class="steps">Question <strong>4 / 21</strong></p>
+		  <h3>In what ZIP code do you live?</h3><input type="text" class="form-control" placeholder="ZIP Code">
+          <a class="footer btn" data-transition="slide" href="#page05">Next</a>
+          </div>
+        </div>
+    </div>
   </div>
 </div> 
 
-<div data-role="page" id="pagefive">
-
+<div data-role="page" id="page05">
   <div data-role="main" class="container">
  
                <div class="card">
                       <div class="main">
                       <div class="content">
-                          <img src="images/progress_icon_05.png" class="img-responsive" alt="Responsive image">                          
-						  <h3>If our new product were available today, how likely would you be to recommend it to others?</h3>
+         <p class="steps">Question <strong>5 / 21</strong></p>
+						  <h3>What is your highest education level?</h3>
                           
  			             <div class="btn-group btn-group-justified">
- 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Extremely likely</a>
- 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Very likely</a>
- 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Slightly likely</a>
- 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Not at all likely</a>
+ 			                <a href="#page06" data-transition="slide" class="list-group-item">Below Sijil Pelajaran Malaysia (SPM)</a>
+ 			                <a href="#page06" data-transition="slide" class="list-group-item">Minimum SPM</a>
+ 			                <a href="#page06" data-transition="slide" class="list-group-item">Minimum Diploma</a>
+ 			                <a href="#page06" data-transition="slide" class="list-group-item">Minimum Degree</a>
+ 			                <a href="#page06" data-transition="slide" class="list-group-item">Higher than Degree</a>
 			             </div> 
                          </div>
                      </div>
                </div>
-
-
   </div>
 </div> 
+
+<div data-role="page" id="page06">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>6 / 21</strong></p>
+						  <h3>What is your average monthly household income?</h3>
+                          
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page07" data-transition="slide" class="list-group-item">RM1,000</a>
+ 			                <a href="#page07" data-transition="slide" class="list-group-item">RM1,000 - RM2,000</a>
+ 			                <a href="#page07" data-transition="slide" class="list-group-item">RM2,000 - RM4,000</a>
+ 			                <a href="#page07" data-transition="slide" class="list-group-item">RM4,000 - RM7,000</a>
+ 			                <a href="#page07" data-transition="slide" class="list-group-item">RM7,000 - RM10,000</a>
+ 			                <a href="#page07" data-transition="slide" class="list-group-item">> RM10,000</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page07">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>7 / 21</strong></p>
+						  <h3>Your current number of dependent(s):</h3>
+                          <p text align="center"><i>(Note: Dependent(s) include(s) children, parent(s), in-law(s), sibling(s) or any other that require(s) your aid and/or support be it financial or non-financial.</i></p>
+                          
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page08" data-transition="slide" class="list-group-item">More than 4</a>
+ 			                <a href="#page08" data-transition="slide" class="list-group-item">3 to 4</a>
+ 			                <a href="#page08" data-transition="slide" class="list-group-item">1 to 2</a>
+ 			                <a href="#page08" data-transition="slide" class="list-group-item">None</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page08">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>8 / 21</strong></p>
+						  <h3>Choose the top ten expenses in your household. </h3>
+                          <h4 text align="center">(1 being the highest expense, 10 being the lowest expense)</h4>
+                          
+<select class="selectpicker">
+    <option value="">1. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">2. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">3. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select> 
+
+<select class="selectpicker">
+    <option value="">4. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">5. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">6. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>  
+
+<select class="selectpicker">
+    <option value="">7. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">8. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">9. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+
+<select class="selectpicker">
+    <option value="">10. Please select</option>
+    <option value="">Food and groceries</option>
+    <option value="">Utilities (incl. internet, phone bill, water bill, electrical bill etc.)</option>
+    <option value="">Childcare (incl. education, daycare, allowance, etc.)</option>
+    <option value="">Car(incl. loan, maintenance, petrol, insurance )</option>
+    <option value="">Public Transport</option>
+    <option value="">House loan</option>
+    <option value="">Rental</option>
+    <option value="">Life/Medical Insurance</option>
+    <option value="">Education for self or spouse (incl. tuition fee, student loan, text book etc.)</option>
+    <option value="">Healthcare (incl. medication, dental, optical etc.)</option>
+    <option value="">Personal Care (incl. Haircuts, facial, shampoo etc.)</option>
+    <option value="">Clothing</option>
+    <option value="">Entertainment</option>
+    <option value="">Vacation</option>
+</select>   
+          <a class="footer btn" data-transition="slide" href="#page09">Next</a>
+
+       </div>
+     </div>
+   </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page09">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>9 / 21</strong></p>
+						  <h3>How much do you usually spend on Food and groceries?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page10" data-transition="slide" class="list-group-item">Below Sijil Pelajaran Malaysia (SPM)</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page10">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>10 / 21</strong></p>
+						  <h3>How many home-cooked meals you had in the past week?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page11" data-transition="slide" class="list-group-item">0 – 2 meals</a>
+ 			                <a href="#page11" data-transition="slide" class="list-group-item">3 – 5 meals</a>
+ 			                <a href="#page11" data-transition="slide" class="list-group-item">6 - 11 meals</a>
+ 			                <a href="#page11" data-transition="slide" class="list-group-item">> 11 meals</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page11">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>11 / 21</strong></p>
+						  <h3>When you do a dinner out, how much do you typically spend total per person? (drinks with dinner included)</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">0 – 2 meals</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">3 – 5 meals</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">6 - 11 meals</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">> 11 meals</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page12">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>12 / 21</strong></p>
+						  <h3>Which dish you consume the most? (Choose one from each category)</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page13" data-transition="slide" class="list-group-item">0 – 2 meals</a>
+ 			                <a href="#page13" data-transition="slide" class="list-group-item">3 – 5 meals</a>
+ 			                <a href="#page13" data-transition="slide" class="list-group-item">6 - 11 meals</a>
+ 			                <a href="#page13" data-transition="slide" class="list-group-item">> 11 meals</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page13">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>13 / 21</strong></p>
+						  <h3>Which supermarket do you prefer for grocery shopping? (You can pick multiple answers)</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page14" data-transition="slide" class="list-group-item">0 – 2 meals</a>
+ 			                <a href="#page14" data-transition="slide" class="list-group-item">3 – 5 meals</a>
+ 			                <a href="#page14" data-transition="slide" class="list-group-item">6 - 11 meals</a>
+ 			                <a href="#page14" data-transition="slide" class="list-group-item">> 11 meals</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page14">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>14 / 21</strong></p>
+						  <h3>What is important for you while deciding where to do your grocery shopping? Pick 3</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page15" data-transition="slide" class="list-group-item">0 – 2 meals</a>
+ 			                <a href="#page15" data-transition="slide" class="list-group-item">3 – 5 meals</a>
+ 			                <a href="#page15" data-transition="slide" class="list-group-item">6 - 11 meals</a>
+ 			                <a href="#page15" data-transition="slide" class="list-group-item">> 11 meals</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page15">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>15 / 21</strong></p>
+						  <h3>Do you own a house?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page16" data-transition="slide" class="list-group-item">Yes, I own a house</a>
+ 			                <a href="#page16" data-transition="slide" class="list-group-item">Yes, I own 2 or more houses</a>
+ 			                <a href="#page16" data-transition="slide" class="list-group-item">No, I am renting a place</a>
+ 			                <a href="#page16" data-transition="slide" class="list-group-item">No, I am staying in family/friend’s house that I am not required to pay rental</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page16">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>16 / 21</strong></p>
+						  <h3>How much do you spend on Life/Medical insurance for your family and yourself?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page17" data-transition="slide" class="list-group-item">Yes, I own a house</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page17">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>17 / 21</strong></p>
+						  <h3>How much do you contribute per month toward your retirement plan(s) and social security?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page18" data-transition="slide" class="list-group-item">Yes, I own a house</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page18">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>18 / 21</strong></p>
+						  <h3>What kind of investment do you invest in? (You can pick more than one)</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page19" data-transition="slide" class="list-group-item">Yes, I own a house</a>
+ 			                <a href="#page19" data-transition="slide" class="list-group-item">Yes, I own 2 or more houses</a>
+ 			                <a href="#page19" data-transition="slide" class="list-group-item">No, I am renting a place</a>
+ 			                <a href="#page19" data-transition="slide" class="list-group-item">No, I am staying in family/friend’s house that I am not required to pay rental</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page19">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>19 / 21</strong></p>
+						  <h3>Do you think that your earning is sufficient?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page20" data-transition="slide" class="list-group-item">Insufficient, I have to borrow money from others to cover my monthly expenses</a>
+ 			                <a href="#page20" data-transition="slide" class="list-group-item">Barely sufficient, I have no extra money for savings every month</a>
+ 			                <a href="#page20" data-transition="slide" class="list-group-item">Sufficient, I have some extra money for savings every month</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page20">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>20 / 21</strong></p>
+						  <h3>Which external factors that you think affect your financial planning the most?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#page21" data-transition="slide" class="list-group-item">Bad economic growth in the country</a>
+ 			                <a href="#page21" data-transition="slide" class="list-group-item">Implementation of GST</a>
+ 			                <a href="#page21" data-transition="slide" class="list-group-item">Political issues</a>
+ 			                <a href="#page21" data-transition="slide" class="list-group-item">Interest rates</a>
+ 			                <a href="#page21" data-transition="slide" class="list-group-item">Inflation</a>
+ 			                <a href="#page21" data-transition="slide" class="list-group-item">Global issues</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+<div data-role="page" id="page21">
+  <div data-role="main" class="container">
+ 
+               <div class="card">
+                      <div class="main">
+                      <div class="content">
+         <p class="steps">Question <strong>21 / 21</strong></p>
+						  <h3>What do you prefer to do to cope with the increase of cost of living?</h3>
+ 			             <div class="btn-group btn-group-justified">
+ 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Control spending (Eg: stop using services/products, buy less, cut down entertainment)</a>
+ 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Replace only when needed (or buy smaller packages)</a>
+ 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Do-It-Yourself (Eg: home-made food, prepare/organise/make by yourself)</a>
+ 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Smart shopping (Eg: buy when promotions and discounts available)</a>
+ 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">Seek value for money (Eg: comparing prices, search for lower ones)</a>
+ 			                <a href="#pagecompleted" data-transition="slide" class="list-group-item">I shop as usual, because it is too troublesome for me to do all the above</a>
+			             </div> 
+                         </div>
+                     </div>
+               </div>
+  </div>
+</div> 
+
+
 
 <div data-role="page" id="pagecompleted">
 
@@ -331,6 +821,5 @@
 		  document.getElementById('js-display-change').innerHTML = changeInput.value;
 		};
 	</script>
-    
   </body>
 </html>
