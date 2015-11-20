@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color:;
+}
+
+
+body .ui-page {
+	background-color:#0A9F9F;
+}
+
+body .ui-page a {
+	color: #2B2B2B;
+	font-weight:100;
+}
+
+a.footer {
+	color: #fff !important;
+	text-shadow: none;
+	font-size: 16px;
+}
+
+p {
+	font-size:14px;
+	font-weight:100;
+	color: #5A5A5A;
+}
+
+
+h1 {
+  margin: .67em 0;
+  font-size: 1.5em;
+}
+
+h3 {
+    text-align: center;
+}
+
+.form-control {
+	border: 1px solid #08827D;
+}
+
+
+textarea:focus, input:focus {
+    color: black;
+}
+
+.login_header {
+	color: #EEF9F9 ;
+	padding-bottom: 10px;
+	text-shadow: none;
+}
+
+
+.badge {
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 30px;
+	text-shadow: none;
+	font-weight:100;
+}
+
+.card a.footer {
+	display: block;
+	padding: 10px;
+	background:#333;
+	color: white;
+}
+
+.card {
+	margin-top: 65px;
+}
+
+
+
+.card img {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.btn-group-justified a {
+	color:red;
+}
+	
+.home_list {
+	margin-top: 70px;
+}
+	
+	
+.btn:hover {
+	color: #D7D7D7;
+}
+
+	
