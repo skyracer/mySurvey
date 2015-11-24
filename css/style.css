@@ -26,14 +26,6 @@ p {
 	color: #5A5A5A;
 }
 
-.steps {
-	text-align: center;
-	font-size:18px;
-	padding: 10px 0 10px;
-	display:block;
-	background: #F7F7F7;
-}
-
 
 
 h1 {
@@ -45,13 +37,43 @@ h3 {
     text-align: center;
 }
 
-.form-control {
-	border: 1px solid #08827D;
+
+.ui-input-text, .ui-input-search {
+	margin:0
 }
 
+.ui-input-text-custom .ui-input-text {
+	margin:0;
+}
 
 textarea:focus, input:focus {
     color: black;
+}
+
+.steps {
+	text-align: center;
+	font-size:18px;
+	padding: 10px 0 10px;
+	display:block;
+	background: #F7F7F7;
+}
+
+.contentTitle {
+	text-align: left;
+	font-size:18px;
+	padding: 10px 0 10px 15px;
+	display:block;
+	background: #3B92C5;
+	color: white;
+	
+}
+	
+
+.subTitle {
+	text-align:center;
+	font-size:18px;
+	color:#17A299;
+	
 }
 
 .login_header {

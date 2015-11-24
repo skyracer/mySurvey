@@ -15,17 +15,17 @@
 
     <!-- Custom styles for this template -->
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
-    <link href='css/rotating-card.css' rel='stylesheet' />
+    <link href='css/rotating-card.css' rel='stylesheet' /> 
     <link href='css/style.css' rel='stylesheet' />
     <link href='css/powerange.css' rel='stylesheet' />
-    <link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" />    
+    <link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" />  
+    
     
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-     <script>
-     $('.selectpicker').selectpicker();    
-     </script>
+    
+     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -321,8 +321,16 @@
                       <div class="content">
          <p class="steps">Question <strong>8 / 21</strong></p>
 						  <h3>Choose the top ten expenses in your household. </h3>
-                          <h4 text align="center">(1 being the highest expense, 10 being the lowest expense)</h4>
-                          
+                          <p class="subTitle">(1 being the highest expense, 10 being the lowest expense)</p>
+                          <div class="row">
+                          	<div class="col-xs-8">Food &amp; Groceries</div>
+                            <div class="col-xs-4">
+                            	<select class="selectpicker">
+                                	<option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                          </div>
 <select class="selectpicker">
     <option value="">1. Please select</option>
     <option value="">Food and groceries</option>
@@ -516,16 +524,24 @@
                <div class="card">
                       <div class="main">
                       <div class="content">
-         <p class="steps">Question <strong>9 / 21</strong></p>
+                          <p class="steps">Question <strong>9 / 21</strong></p>
 						  <h3>How much do you usually spend on Food and groceries?</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page10" data-transition="slide" class="list-group-item">Below Sijil Pelajaran Malaysia (SPM)</a>
-			             </div> 
-                         </div>
-                     </div>
+						  <form class="form-inline">
+ 						  <div class="form-group">
+   					      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+   					      <div class="input-group">
+    					  <div class="input-group-addon">$</div>
+    					  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+    					  <div class="input-group-addon">.00</div>
+   						  </div>
+  					      </div>
+					      </form>
+                      </div>
+                      <a class="footer btn" data-transition="slide" href="#page10">Next</a>
+                      </div>
                </div>
+   </div>
   </div>
-</div> 
 
 <div data-role="page" id="page10">
   <div data-role="main" class="container">
@@ -556,10 +572,11 @@
          <p class="steps">Question <strong>11 / 21</strong></p>
 						  <h3>When you do a dinner out, how much do you typically spend total per person? (drinks with dinner included)</h3>
  			             <div class="btn-group btn-group-justified">
- 			                <a href="#page12" data-transition="slide" class="list-group-item">0 – 2 meals</a>
- 			                <a href="#page12" data-transition="slide" class="list-group-item">3 – 5 meals</a>
- 			                <a href="#page12" data-transition="slide" class="list-group-item">6 - 11 meals</a>
- 			                <a href="#page12" data-transition="slide" class="list-group-item">> 11 meals</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">< RM 10</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">RM 10 – RM 20</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">RM 21 – RM 30</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">RM 31 – RM 50</a>
+ 			                <a href="#page12" data-transition="slide" class="list-group-item">> RM 50</a>
 			             </div> 
                          </div>
                      </div>
@@ -574,13 +591,62 @@
                       <div class="main">
                       <div class="content">
          <p class="steps">Question <strong>12 / 21</strong></p>
-						  <h3>Which dish you consume the most? (Choose one from each category)</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page13" data-transition="slide" class="list-group-item">0 – 2 meals</a>
- 			                <a href="#page13" data-transition="slide" class="list-group-item">3 – 5 meals</a>
- 			                <a href="#page13" data-transition="slide" class="list-group-item">6 - 11 meals</a>
- 			                <a href="#page13" data-transition="slide" class="list-group-item">> 11 meals</a>
-			             </div> 
+						  <h3>Which dish you consume the most? </h3>
+                          <p class="subTitle">(Choose one from each category)</p>
+                          
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-collapse').multiselect();
+    });
+</script>
+                          
+    <div class="panel-group" id="example-collapse-accordion">
+        <div class="panel panel-default" style="overflow:visible;">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#example-collapse-accordion" href="#example-collapse-accordion-one">
+                        Bootstrap Multiselect
+                    </a>
+                </h4>
+            </div>
+            <div id="example-collapse-accordion-one" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <select id="example-collapse" multiple="multiple">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                        <option value="6">Option 6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+The examples below are aimed to demonstrate the performance of several features when using a large number of options:
+
+    Using the select all option, includeSelectAllOption set to tru                                  
+                          <!--p class="contentTitle">Category A</p>
+                         <label><input type="checkbox" value="">Beef</label>
+                         <label><input type="checkbox" value="">Chicken</label>
+                         <label><input type="checkbox" value="">Fish</label>
+                         <label><input type="checkbox" value="">Lamb</label>
+                         <label><input type="checkbox" value="">Pork</label>
+                         <label><input type="checkbox" value="">Seafood</label>
+                         <label><input type="checkbox" value="">Other Poultry (Please specify)</label><textarea class="form-control" rows="3"></textarea>
+                         <label><input type="checkbox" value="">None of the above</label>
+                         </br>
+                         
+                          <p class="contentTitle">Category B</p>
+                         <label><input type="checkbox" value="">Noodles</label>
+                         <label><input type="checkbox" value="">Pasta</label>
+                         <label><input type="checkbox" value="">White Rice</label>
+                         <label><input type="checkbox" value="">Brown Rice</label>
+                         <label><input type="checkbox" value="">Bread</label>
+                         <label><input type="checkbox" value="">None of the above</label-->
+                         <a class="footer btn" data-transition="slide" href="#page13">Next</a>
+                         
                          </div>
                      </div>
                </div>
@@ -593,16 +659,65 @@
                <div class="card">
                       <div class="main">
                       <div class="content">
-         <p class="steps">Question <strong>13 / 21</strong></p>
-						  <h3>Which supermarket do you prefer for grocery shopping? (You can pick multiple answers)</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page14" data-transition="slide" class="list-group-item">0 – 2 meals</a>
- 			                <a href="#page14" data-transition="slide" class="list-group-item">3 – 5 meals</a>
- 			                <a href="#page14" data-transition="slide" class="list-group-item">6 - 11 meals</a>
- 			                <a href="#page14" data-transition="slide" class="list-group-item">> 11 meals</a>
-			             </div> 
-                         </div>
-                     </div>
+                      <p class="steps">Question <strong>13 / 21</strong></p>
+						  <h3>Which supermarket do you prefer for grocery shopping?</h3>
+                          <p class="subTitle">(You can pick multiple answers)</p>
+                   
+                         <label><input type="checkbox" value="">AEON</label>
+                         <label><input type="checkbox" value="">AEON BIG</label>
+                         <label><input type="checkbox" value="">AEON MaxValu</label>
+                         <label><input type="checkbox" value="">Tesco</label>
+                         <label><input type="checkbox" value="">Tesco Extra</label>
+                         <label><input type="checkbox" value="">Giant Hypermarket</label>
+                         <label><input type="checkbox" value="">Econsave</label>
+                         <label><input type="checkbox" value="">Jaya Grocer</label>
+                         <label><input type="checkbox" value="">Parkson</label>
+                         <label><input type="checkbox" value="">KK Supermart</label>
+                         <label><input type="checkbox" value="">Mydin</label>
+                         <label><input type="checkbox" value="">99 Speedmart</label>
+                         
+                         <label><input type="checkbox" value="">Cold Storage</label>
+                         <label><input type="checkbox" value="">Village Grocer</label>
+                         <label><input type="checkbox" value="">The Store</label>
+                         <label><input type="checkbox" value="">7-Eleven</label>
+                         <label><input type="checkbox" value="">Isetan</label>
+                         <label><input type="checkbox" value="">Hero Market</label>
+                         <label><input type="checkbox" value="">Econjaya</label>
+                         <label><input type="checkbox" value="">Medan Supermarket</label>
+                         <label><input type="checkbox" value="">Hwa Thai</label>
+                         <label><input type="checkbox" value="">Checkers</label>
+                         <label><input type="checkbox" value="">Family Store</label>
+                         <label><input type="checkbox" value="">Gama</label>
+                         
+                         <label><input type="checkbox" value="">UO Superstore</label>
+                         <label><input type="checkbox" value="">Target Supermarket</label>
+                         <label><input type="checkbox" value="">Sunshine</label>
+                         <label><input type="checkbox" value="">E-Mart</label>
+                         <label><input type="checkbox" value="">KiP Mart</label>
+                         <label><input type="checkbox" value="">Sabasun HypeRuncit</label>
+                         <label><input type="checkbox" value="">Lulu Hypermart</label>
+                         <label><input type="checkbox" value="">SAM Groceria</label>
+                         <label><input type="checkbox" value="">Pacific Hypermarket</label>
+                         <label><input type="checkbox" value="">Everrise</label>
+                         <label><input type="checkbox" value="">C-Mart</label>
+                         <label><input type="checkbox" value="">Aneka</label>
+                   
+                         <label><input type="checkbox" value="">Servay Hypermarket</label>
+                         <label><input type="checkbox" value="">Boulevard Hypermarket</label>
+                         <label><input type="checkbox" value="">TMG Mart</label>
+                         <label><input type="checkbox" value="">Billion Shopping Centre</label>
+                         <label><input type="checkbox" value="">Pantai Timor Shopping Centre</label>
+                         <label><input type="checkbox" value="">Pasaraya PKT</label>
+                         <label><input type="checkbox" value="">TF Value-Mart</label>
+                         <label><input type="checkbox" value="">H&amp;L Group</label>
+                         <label><input type="checkbox" value="">Ta Kiong</label>
+                         <label><input type="checkbox" value="">Maslee</label>
+                         <label><input type="checkbox" value="">TLC Group</label>
+                         <label><input type="checkbox" value="">Others</label>
+                         
+                         <a class="footer btn" data-transition="slide" href="#page14">Next</a>
+                      </div>
+                      </div>
                </div>
   </div>
 </div> 
@@ -614,13 +729,21 @@
                       <div class="main">
                       <div class="content">
          <p class="steps">Question <strong>14 / 21</strong></p>
-						  <h3>What is important for you while deciding where to do your grocery shopping? Pick 3</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page15" data-transition="slide" class="list-group-item">0 – 2 meals</a>
- 			                <a href="#page15" data-transition="slide" class="list-group-item">3 – 5 meals</a>
- 			                <a href="#page15" data-transition="slide" class="list-group-item">6 - 11 meals</a>
- 			                <a href="#page15" data-transition="slide" class="list-group-item">> 11 meals</a>
-			             </div> 
+						  <h3>What is important for you while deciding where to do your grocery shopping?</h3>
+                          <p class="subTitle">(Pick 3)</p>
+                         <label><input type="checkbox" value="">Highest quality</label>
+                         <label><input type="checkbox" value="">Low prices</label>
+                         <label><input type="checkbox" value="">Promotions and special offers</label>
+                         <label><input type="checkbox" value="">Store loyalty cards and schemes</label>
+                         <label><input type="checkbox" value="">Nearness or location of retailer</label>
+                         <label><input type="checkbox" value="">Opening hours</label>
+                         <label><input type="checkbox" value="">Store layout/organizing of in-store space</label>
+                         <label><input type="checkbox" value="">Convenience (car parking, catering/child care/toilet facilities)</label>
+                         <label><input type="checkbox" value="">Large selection of goods</label>
+                         <label><input type="checkbox" value="">On a public transport route</label>
+                         <label><input type="checkbox" value="">Customer service/Friendly and helpful staff</label>
+                         <label><input type="checkbox" value="">Retailer is within a multi-shopping complex</label>
+                         <a class="footer btn" data-transition="slide" href="#page15">Next</a>
                          </div>
                      </div>
                </div>
@@ -655,9 +778,17 @@
                       <div class="content">
          <p class="steps">Question <strong>16 / 21</strong></p>
 						  <h3>How much do you spend on Life/Medical insurance for your family and yourself?</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page17" data-transition="slide" class="list-group-item">Yes, I own a house</a>
-			             </div> 
+						  <form class="form-inline">
+ 						  <div class="form-group">
+   					      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+   					      <div class="input-group">
+    					  <div class="input-group-addon">$</div>
+    					  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+    					  <div class="input-group-addon">.00</div>
+   						  </div>
+  					      </div>
+					      </form>
+                         <a class="footer btn" data-transition="slide" href="#page17">Next</a>
                          </div>
                      </div>
                </div>
@@ -672,9 +803,17 @@
                       <div class="content">
          <p class="steps">Question <strong>17 / 21</strong></p>
 						  <h3>How much do you contribute per month toward your retirement plan(s) and social security?</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page18" data-transition="slide" class="list-group-item">Yes, I own a house</a>
-			             </div> 
+						  <form class="form-inline">
+ 						  <div class="form-group">
+   					      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+   					      <div class="input-group ui-input-text-custom">
+    					  <div class="input-group-addon">$</div>
+    					  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+    					  <div class="input-group-addon">.00</div>
+   						  </div>
+  					      </div>
+					      </form>  
+                         <a class="footer btn" data-transition="slide" href="#page18">Next</a>
                          </div>
                      </div>
                </div>
@@ -688,13 +827,17 @@
                       <div class="main">
                       <div class="content">
          <p class="steps">Question <strong>18 / 21</strong></p>
-						  <h3>What kind of investment do you invest in? (You can pick more than one)</h3>
- 			             <div class="btn-group btn-group-justified">
- 			                <a href="#page19" data-transition="slide" class="list-group-item">Yes, I own a house</a>
- 			                <a href="#page19" data-transition="slide" class="list-group-item">Yes, I own 2 or more houses</a>
- 			                <a href="#page19" data-transition="slide" class="list-group-item">No, I am renting a place</a>
- 			                <a href="#page19" data-transition="slide" class="list-group-item">No, I am staying in family/friend’s house that I am not required to pay rental</a>
-			             </div> 
+						  <h3>What kind of investment do you invest in? </h3>
+                          <p class="subTitle">(You can pick more than one)</p>
+                         <label><input type="checkbox" value="">Bank savings / Cash in bank</label>
+                         <label><input type="checkbox" value="">Fixed Deposits</label>
+                         <label><input type="checkbox" value="">Bonds</label>
+                         <label><input type="checkbox" value="">Shares</label>
+                         <label><input type="checkbox" value="">Property</label>
+                         <label><input type="checkbox" value="">Managed funds / Mutual funds</label>
+                         <label><input type="checkbox" value="">Other investment</label>
+                         <label><input type="checkbox" value="">I do not invest in any investment</label>
+                         <a class="footer btn" data-transition="slide" href="#page19">Next</a>
                          </div>
                      </div>
                </div>
@@ -821,5 +964,6 @@
 		  document.getElementById('js-display-change').innerHTML = changeInput.value;
 		};
 	</script>
+    
   </body>
 </html>
