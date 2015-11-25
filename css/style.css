@@ -39,15 +39,29 @@ h3 {
 
 
 .ui-input-text, .ui-input-search {
-	margin:0
+	margin:0px;
+
 }
 
 .ui-input-text-custom .ui-input-text {
 	margin:0;
 }
 
+.ui-input-text-custom .ui-input-text input {
+	border: none
+}
+
+.text-table {
+	padding: 5px 0 0 15px;
+}
+
 textarea:focus, input:focus {
     color: black;
+}
+
+hr.divider {
+	margin-top:2px;
+	margin-bottom:2px;
 }
 
 .steps {
